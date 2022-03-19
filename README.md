@@ -7,6 +7,7 @@ Contents:
 - What is this?
 - Usage
 - Deployment
+- Dev Containers
 - Credits
 
 # What is this?
@@ -26,6 +27,7 @@ Bundled tools:
 - Clone your new repository.
 - Run `npm install` to install the dependencies.
 - Run `npm run start` to start the local development server.
+- Browser to `http://localhost:8080`
 
 You'll see a white page load, which calls the embedded Azure function.
 You may need to reload the page on first load as the Azure Functions CLI starts up in parallel and tends to come up just a touch slower than the `vite` dev server.
@@ -49,6 +51,10 @@ When you use the Azure portal to create a new Static Web Application, select cus
     output_location: "dist"
 
 You can either enter these in the Azure Portal UI, or you can edit the GitHub build .yml file that gets created in `.github` afterwards if you missed this.
+
+# Dev Containers
+
+This repository contains pre-configured `.devcontainer` support, so you can use it to spin up either VS Code devcontainers, or a GitHub Codespace for your application. It should just work!
 
 # Credits
 
